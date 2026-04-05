@@ -1,1 +1,82 @@
 
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+   background: linear-gradient(135deg, #232526, #414345);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card UI */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Counter */
+.counter {
+  font-size: 65px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button colors */
+.increment {
+  background: linear-gradient(45deg, #00c853, #69f0ae);
+}
+
+.decrement {
+  background: linear-gradient(45deg, #ff1744, #ff8a80);
+}
+
+.reset {
+  background: #6c757d;
+  color: white;
+}
+
+/* Hover effects */
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Disabled button */
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Warning text */
+.warning {
+  color: red;
+  font-size: 14px;
+}
